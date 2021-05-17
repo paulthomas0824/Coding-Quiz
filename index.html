@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="test your knowledge with this coding quiz challenge!">
+        <meta property="og:image" content="https://github.com/maphaiyarath/code-quiz/raw/main/og-code-quiz.png">
+        <title>Code Quiz</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <nav class="row justify-content-between mx-3">
+            <div class="col-3">
+                <a href="./highscores.html">
+                    <p id="highscores-link">View highscores</p>
+                </a>
+            </div>
+            <div class="col-3">
+                <p id="timer" class="float-right">Time: <span id="time">0</span></p>
+            </div>
+        </nav>
+        <div class="container">
+            <main class="row justify-content-center" id="welcome">
+                <div class="col-sm-12 col-md-8 col-lg-6 text-center">
+                    <h1>Coding Quiz Challenge</h1>
+                    <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                    <button type="button" id="start" class="btn btn-primary">Start Quiz</button>
+                </div>
+            </main>
+            <div class="row justify-content-center">
+                <div class="quiz col-sm-12 col-md-8 col-lg-6" style="display: none;"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="done col-12 col-sm-12 col-md-8 col-lg-6" style="display: none;">
+                    <h1>All done!</h1>
+                    <p id="your-score">Your final score is: </p>
+                    <form class="form">
+                        <div class="form-row align-items-center">
+                            <div class="col-4">
+                                <label for="initials" class="sr-only">Enter initials: </label>
+                                <input type="text" readonly class="form-control-plaintext" id="initials" value="Enter initials: ">
+                            </div>
+                            <div class="col-4">
+                                <label for="initial-input" class="sr-only">Enter initials: </label>
+                                <input type="text" maxlength="3" class="form-control" id="initial-input">
+                            </div>
+                            <div class="col-4">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="alerts col-sm-12 col-md-8 col-lg-6">
+                    <div class="alert alert-success" role="alert" style="display: none;">Correct!</div>
+                    <div class="alert alert-danger" role="alert" style="display: none;">Wrong!</div>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/f97e73811e.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>

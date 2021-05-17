@@ -1,0 +1,20 @@
+.alert {
+    margin-top: 5px;
+}
+
+#timer {
+    margin: 10px;
+}
+
+#highscore-buttons {
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+#highscores-link {
+    margin: 10px;
+}
+
+table {
+    margin: 0px 50px 0px 50px;
+}
