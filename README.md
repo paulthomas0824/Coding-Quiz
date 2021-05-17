@@ -2,7 +2,7 @@
 
 ![Code Quiz App](./og-code-quiz.png)
 
-You can see the deployed app [here](https://maphaiyarath.github.io/code-quiz/).
+You can see the deployed app [here](https://paulthomas0824.github.io/coding-quiz/).
 
 ## Table of Contents
 * [Description](#description)
